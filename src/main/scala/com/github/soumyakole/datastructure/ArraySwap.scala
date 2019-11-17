@@ -1,7 +1,8 @@
 package com.github.soumyakole.datastructure
 
 /**
-  * Write a loop that swaps adjacent elements of an array of integers. For example, Array(1, 2, 3, 4, 5) becomes Array(2, 1, 4, 3, 5)
+  * Write a loop that swaps adjacent elements of an array of integers.
+  * For example, Array(1, 2, 3, 4, 5) becomes Array(2, 1, 4, 3, 5)
   */
 
 object ArraySwap extends App {
@@ -14,6 +15,7 @@ object ArraySwap extends App {
 
   val solution_2 = for {b <- a.grouped(2); c <- b.reverse} yield c
 
-  println(solution_2.mkString(" "))
+  //echo is defined in package object
+  datastructure.echo(solution_2.mkString(" "))
 
 }
