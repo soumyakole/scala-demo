@@ -36,3 +36,9 @@ class Rational(private val n: Int, private val d: Int) extends Ordered[Rational]
   override def compare(that: Rational): Int = this.n * that.n - this.d * that.n
 }
 
+object Rational {
+  def unapply(rational: Rational): Option[(Int, Int)] = if (rational.d == 0) None else Some((rational.n,rational.d))
+
+  def apply(n: Int, d: Int = 1): Rational = new Rational(n,d)
+}
+

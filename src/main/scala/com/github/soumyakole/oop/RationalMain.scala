@@ -2,9 +2,9 @@ package com.github.soumyakole.oop
 
 object RationalMain extends App {
 
-  val r1 = new Rational(2,3)
-  val r2 = new Rational(2,3)
-  val r3 = new Rational(2)
+  val r1 = Rational(2,3)
+  val r2 = Rational(2,3)
+  val r3 = Rational(2)
 
   println(r1*r2)
   println(r1 / r2)
@@ -12,5 +12,12 @@ object RationalMain extends App {
   println(r1 + 2)
 
   println(r1 <= r2)
+
+  val chk: String = r2 match {
+    case Rational(2,4)=> "two by three"
+    case _ => "other"
+  }
+
+  println(chk)
 
 }
