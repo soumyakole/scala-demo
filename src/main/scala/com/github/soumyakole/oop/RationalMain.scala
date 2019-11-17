@@ -11,4 +11,6 @@ object RationalMain extends App {
 
   println(r1 + 2)
 
+  println(r1 <= r2)
+
 }

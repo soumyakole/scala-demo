@@ -1,6 +1,6 @@
 package com.github.soumyakole.oop
 
-class Rational(private val n: Int, private val d: Int) {
+class Rational(private val n: Int, private val d: Int) extends Ordered[Rational]{
   require(d != 0)
 
   // auxiliary constructor. This can be achieved through default value of d = 1 in primary constructor
@@ -33,5 +33,6 @@ class Rational(private val n: Int, private val d: Int) {
   private def gcd(a: Int, b: Int): Int =
     if (b == 0) a else gcd(b, a % b)
 
+  override def compare(that: Rational): Int = this.n * that.n - this.d * that.n
 }
 
