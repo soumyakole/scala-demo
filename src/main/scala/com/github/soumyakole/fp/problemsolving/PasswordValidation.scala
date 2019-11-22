@@ -1,5 +1,4 @@
-package com.github.soumyakole.fp.functionaldatastructure
-
+package com.github.soumyakole.fp.problemsolving
 
 /**
   * Each password must now have at least six characters and a mix of upper and lowercase letters.
@@ -25,8 +24,8 @@ object PasswordValidation extends App{
   //Using map
   val result: Seq[(String, Boolean)] = passwords.map(x => (x, checker(x)))
   println(result)
-  
-  //using for 
+
+  //using for
   val result1: Seq[(String, Boolean)] = for (w <- passwords) yield (w,checker(w))
   println(result1)
 
