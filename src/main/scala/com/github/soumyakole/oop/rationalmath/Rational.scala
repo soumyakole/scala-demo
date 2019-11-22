@@ -1,4 +1,4 @@
-package com.github.soumyakole.oop
+package com.github.soumyakole.oop.rationalmath
 
 class Rational(private val n: Int, private val d: Int) extends Ordered[Rational]{
   require(d != 0)

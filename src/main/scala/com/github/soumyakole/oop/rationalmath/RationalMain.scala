@@ -1,4 +1,4 @@
-package com.github.soumyakole.oop
+package com.github.soumyakole.oop.rationalmath
 
 object RationalMain extends App {
 
@@ -10,6 +10,7 @@ object RationalMain extends App {
   println(r1 / r2)
 
   println(r1 + 2)
+  println(2 + r1)
 
   println(r1 <= r2)
 
