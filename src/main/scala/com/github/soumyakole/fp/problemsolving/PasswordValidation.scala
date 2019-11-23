@@ -1,7 +1,7 @@
 package com.github.soumyakole.fp.problemsolving
 
 /**
-  * Each password must now have at least six characters and a mix of upper and lowercase letters.
+  * Each password must have at least six characters and a mix of upper and lowercase letters.
   * So, given a list of password strings, we need to compute a corresponding list of Booleans that will return true if the password qualifies, and otherwise false.
   */
 
